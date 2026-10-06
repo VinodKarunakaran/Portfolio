@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Vinod Karunakaran — Product Manager, BFSI & Payments</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fbf9ff;--card:#fff;--fg:#1c1b2e;--mute:#5d5b78;--line:#e6e2f5;--v:#7c3aed;--p:#ec4899;--o:#f97316;--t:#0d9488;--b:#2563eb;
+--grad:linear-gradient(90deg,#7c3aed,#ec4899 55%,#f97316);
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#12111c;--card:#1b1a2b;--fg:#f1effc;--mute:#a9a6c6;--line:#2e2c47;--v:#a78bfa;--p:#f472b6;--o:#fb923c;--t:#2dd4bf;--b:#60a5fa;--grad:linear-gradient(90deg,#a78bfa,#f472b6 55%,#fb923c)}}
+:root[data-theme="dark"]{--bg:#12111c;--card:#1b1a2b;--fg:#f1effc;--mute:#a9a6c6;--line:#2e2c47;--v:#a78bfa;--p:#f472b6;--o:#fb923c;--t:#2dd4bf;--b:#60a5fa;--grad:linear-gradient(90deg,#a78bfa,#f472b6 55%,#fb923c)}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:400 17px/1.6 "DM Sans",system-ui,sans-serif}
+main{max-width:860px;margin:0 auto;padding:56px 20px 80px}
+.g{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+h1,h2,h3{font-family:"Outfit",system-ui,sans-serif;margin:0}
+h1{font-size:clamp(42px,9vw,72px);line-height:1;font-weight:800;letter-spacing:-.02em}
+h2{font-size:28px;font-weight:700;margin-bottom:16px}
+.role{font:700 20px "Outfit",sans-serif;color:var(--t);margin:14px 0 8px}
+.sub{color:var(--mute);max-width:56ch}
+.links{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0 36px}
+.btn{font:700 15px "DM Sans",sans-serif;border:0;border-radius:999px;padding:11px 20px;cursor:pointer;text-decoration:none;display:inline-block;transition:transform .15s}
+.btn:active{transform:scale(.96)}
+.pri{background:var(--grad);color:#fff}
+.sec{background:var(--card);color:var(--fg);box-shadow:inset 0 0 0 2px var(--v)}
+button:focus-visible,a:focus-visible{outline:3px solid var(--b);outline-offset:2px}
+[role=tablist]{display:flex;gap:6px;overflow-x:auto;border-bottom:2px solid var(--line);margin-bottom:28px;padding-bottom:2px}
+[role=tab]{font:700 16px "Outfit",sans-serif;color:var(--mute);background:none;border:0;border-bottom:4px solid transparent;padding:10px 16px;cursor:pointer;white-space:nowrap}
+[role=tab][aria-selected=true]{color:var(--c);border-bottom-color:var(--c)}
+[hidden]{display:none!important}
+.panel{animation:in .3s ease}
+@keyframes in{from{opacity:0}to{opacity:1}}
+@media (prefers-reduced-motion:reduce){.panel{animation:none}.btn{transition:none}}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.card{background:var(--card);border:2px solid var(--line);border-radius:16px;padding:18px;text-align:left;font:inherit;color:inherit;width:100%}
+button.card{cursor:pointer}
+button.card[aria-expanded=true]{border-color:var(--c)}
+.num{font:800 40px/1 "Outfit",sans-serif;color:var(--c)}
+.lbl{font-weight:500;margin-top:6px}
+.more{color:var(--mute);font-size:15px;margin-top:8px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+.chip{font:700 14px "DM Sans",sans-serif;border-radius:999px;border:2px solid var(--c);background:none;color:var(--c);padding:7px 14px;cursor:pointer}
+.chip[aria-pressed=true]{background:var(--c);color:#fff}
+.pills{display:flex;flex-wrap:wrap;gap:8px}
+.pill{border-radius:10px;padding:6px 12px;font-weight:500;font-size:15px;background:color-mix(in srgb,var(--c) 14%,transparent);color:var(--c);border:1.5px solid color-mix(in srgb,var(--c) 40%,transparent)}
+.exp{display:grid;grid-template-columns:230px 1fr;gap:24px}
+.rl{display:flex;flex-direction:column;gap:8px}
+.rb{text-align:left;background:var(--card);border:2px solid var(--line);border-radius:12px;padding:12px 14px;cursor:pointer;font:inherit;color:var(--fg)}
+.rb[aria-selected=true]{border-color:var(--c);box-shadow:0 0 0 3px color-mix(in srgb,var(--c) 22%,transparent)}
+.rb b{display:block;font:700 15px "Outfit",sans-serif;color:var(--c)}
+.rb span{font-size:13px;color:var(--mute)}
+.rd h3{font-size:22px;color:var(--c)}
+.rd .meta{color:var(--mute);font-size:15px;margin:2px 0 14px}
+.rd li{margin-bottom:10px}
+.rd ul{padding-left:20px;margin:0}
+@media (max-width:640px){.exp{grid-template-columns:1fr}.rl{flex-direction:row;overflow-x:auto}.rb{min-width:170px}}
+footer{margin-top:56px;color:var(--mute);font-size:14px}
+</style>
+</head>
+<body>
+<main>
+<header>
+<h1 class="g">Vinod Karunakaran</h1>
+<div class="role">Product Manager · BFSI · Payments · Fintech</div>
+<p class="sub">11 years in BFSI technology at Mastercard and JP Morgan Chase. I turn regulated, complex payment problems into products people actually use.</p>
+<div class="links">
+<a class="btn pri" href="mailto:Vinod.Karan@Outlook.com">Email me</a>
+<a class="btn sec" href="tel:+919008675595">Call me</a>
+<a class="btn sec" href="https://linkedin.com/in/vinodkarunakaran" target="_blank" rel="noopener">LinkedIn</a>
+</div>
+</header>
+
+<div role="tablist" aria-label="Portfolio sections" id="tabs"></div>
+<div id="panels"></div>
+<footer>Bengaluru, India</footer>
+</main>
+
+<script>
+const E=(h)=>{const d=document.createElement('div');d.innerHTML=h;return d.firstElementChild};
+const tabs=[
+ {id:'about',label:'About',c:'--v'},
+ {id:'impact',label:'Impact',c:'--p'},
+ {id:'exp',label:'Experience',c:'--o'},
+ {id:'skills',label:'Skills',c:'--t'},
+ {id:'contact',label:'Contact',c:'--b'}
+];
+const impact=[
+ ['60%','faster merchant time-to-market','API-first gateway integration onboarded 100+ partners and grew Mastercard\'s acquiring base.','--v'],
+ ['95%','CSAT on Virtual Card','Delivered end to end, with a 75% drop in card payment failures. It became the reference win for the global commercial cards programme.','--p'],
+ ['30%','revenue growth at Chase','Cross-functional digital banking initiatives on the commercial platform, with WCAG, GDPR and PCI-DSS upheld.','--o'],
+ ['20%','better client onboarding','Gateway workflow redesign shipped on time in Q1, validated by data.','--t'],
+ ['0','compliance breaches','100% Visa and AMEX scheme compliance across 11 years in regulated environments.','--b'],
+ ['50%','shorter documentation cycles','Prompt engineering with ChatGPT and Copilot for BRDs, PRDs and test criteria.','--v']
+];
+const jobs=[
+ {co:'JP Morgan Chase',t:'Senior Product Associate, Digital Products',d:'Bengaluru · Jun 2025 – Dec 2025',c:'--v',b:[
+  'Owned vision and delivery for commercial banking digital features, turning regulatory requirements into epics, stories and measurable acceptance criteria aligned to OKRs.',
+  'Led a 12-person squad (8 engineers, 1 designer, 1 scrum master, 2 PMs) that shipped 10 features in 6 months, on time and in scope.',
+  'Used Gen AI tools for requirement analysis, acceptance criteria, roadmaps, prototyping and testing.',
+  'Balanced customer impact, compliance and engineering capacity, with traceability from business requirement to signed-off delivery.',
+  'Kept key KPIs, OKRs and user metrics at 90–95%, and the north star metric above 95%.']},
+ {co:'Mastercard',t:'Product Manager, Payment Gateway Services',d:'Pune · Nov 2023 – May 2025',c:'--p',b:[
+  'Defined the vision for B2B merchant onboarding and gateway modernisation, with a multi-quarter API-first roadmap for 100+ merchant partners.',
+  'Delivered 20+ gateway features across Visa and AMEX networks under one prioritised roadmap.',
+  'Cut merchant time-to-market by 60%; delivered Fraud & Risk Management and Network Tokenization with full traceability.',
+  'Used SQL, Power BI and Splunk for KPI tracking and data-backed roadmap decisions.']},
+ {co:'Mastercard',t:'Product Manager, Commercial Cards & Expense Mgmt',d:'Pune · Feb 2017 – Oct 2023',c:'--o',b:[
+  'Owned the long-term vision for the global B2B commercial card platform: 40+ features over 4 years with zero compliance breaches.',
+  'Led strategy and delivery of the Virtual Card programme, from user pain and business case to 95% CSAT and a 75% reduction in card payment failures.',
+  'Ran requirement workshops with domain managers, engineering leads and business stakeholders.',
+  'Introduced a data-driven prioritisation framework that raised speed-to-market by 15% and reduced scope creep.']},
+ {co:'Mastercard (via Tek Systems)',t:'Associate Implementation Engineer',d:'Pune · Feb 2016 – Feb 2017',c:'--t',b:[
+  'Certified 20+ issuers, acquirers and processors onto the Mastercard network using ISO 8583, PIN processing and scheme compliance expertise.',
+  'Diagnosed issuer processing issues across authorization, clearing, settlement and file reconciliation, improving success rates across 100+ banks and processors.',
+  'Managed global stakeholders across technology, compliance and operations, resolving escalations within SLA.']},
+ {co:'Chandusoft Technology',t:'Software Engineer, QA & Test Automation',d:'Bengaluru · May 2014 – Feb 2016',c:'--b',b:[
+  'Automated payment and e-commerce test workflows with Selenium-based frameworks, cutting regression cycles by 50%.']}
+];
+const skills=[
+ ['Product','--v',['BFSI Product Strategy','Roadmap Ownership','Product Vision','OKR Alignment','Backlog Prioritisation','Stakeholder Management','Workshop Facilitation']],
+ ['Payments','--p',['Payment Gateway','Merchant Acquiring','Commercial Cards','Expense Management','ISO 8583','Network Tokenization','Fraud & Risk Management','Regulatory Compliance']],
+ ['Data & AI','--o',['SQL','Power BI','Splunk','Prompt Engineering','AI-Assisted Delivery']],
+ ['Delivery','--t',['Agile / Scrum','CSPO Certified','Jira Align','Confluence','REST API Management','System Integration']]
+];
+const certs=['Certified Scrum Product Owner · Scrum Alliance, 2023','Lean Six Sigma Yellow Belt · Mastercard, 2024','SQL · Stanford University, 2022','B.E. Information Science · Atria Institute of Technology'];
+const css=n=>`var(${n})`;
+const panels={
+ about:()=>`<h2 class="g">About me</h2>
+ <p>I'm a Senior Product Manager with 6 years in product ownership, built on a foundation of hands-on payments engineering. I specialise in payment gateway modernisation, commercial card platforms and ISO 8583-compliant delivery.</p>
+ <div class="grid" style="margin-top:20px">
+ ${[['Vision-led','I set direction where user pain, commercial opportunity and technical feasibility meet. Every roadmap commitment is backed by research.','--v'],
+ ['Outcomes first','Features are defined by the metric they move. I have redirected engineering from low-impact work toward measurable revenue and retention.','--p'],
+ ['AI-enabled','I use AI tooling for requirement analysis, acceptance criteria and impact mapping, and validate every output before it goes into an artifact.','--t']]
+ .map(x=>`<div class="card" style="--c:${css(x[2])}"><h3 style="color:var(--c)">${x[0]}</h3><p class="more">${x[1]}</p></div>`).join('')}</div>
+ <p class="more" style="margin-top:20px">Open to Senior PM and Product Manager / Product Owner roles in BFSI and fintech.</p>`,
+ impact:()=>`<h2 class="g">Impact in numbers</h2><p class="sub" style="margin-bottom:16px">Select a card to see the story behind the number.</p>
+ <div class="grid">${impact.map((x,i)=>`<button class="card" aria-expanded="false" data-i="${i}" style="--c:${css(x[3])}"><div class="num">${x[0]}</div><div class="lbl">${x[1]}</div><div class="more" hidden>${x[2]}</div></button>`).join('')}</div>`,
+ exp:()=>`<h2 class="g">Experience</h2><div class="exp"><div class="rl" role="tablist" aria-label="Roles" aria-orientation="vertical">${jobs.map((j,i)=>`<button class="rb" role="tab" aria-selected="${i==0}" data-j="${i}" style="--c:${css(j.c)}"><b>${j.co}</b><span>${j.d.split('·')[1].trim()}</span></button>`).join('')}</div><div class="rd" id="rd"></div></div>`,
+ skills:()=>`<h2 class="g">Skills & credentials</h2><div class="chips" id="chips"><button class="chip" aria-pressed="true" data-k="all" style="--c:var(--fg)">All</button>${skills.map((s,i)=>`<button class="chip" aria-pressed="false" data-k="${i}" style="--c:${css(s[1])}">${s[0]}</button>`).join('')}</div><div class="pills" id="pills"></div>
+ <h3 style="margin:32px 0 12px;color:var(--b)">Education & certifications</h3><div class="grid">${certs.map(c=>`<div class="card" style="--c:var(--b)">${c}</div>`).join('')}</div>`,
+ contact:()=>`<h2 class="g">Let's talk</h2><p class="sub">I'm looking for Senior PM and Product Owner roles in BFSI and fintech. Recruiters can reach me by phone, email or LinkedIn.</p>
+ <div class="links"><a class="btn pri" href="mailto:Vinod.Karan@Outlook.com">Vinod.Karan@Outlook.com</a><a class="btn sec" href="tel:+919008675595">Call +91-9008675595</a><a class="btn sec" href="https://linkedin.com/in/vinodkarunakaran" target="_blank" rel="noopener">linkedin.com/in/vinodkarunakaran</a></div>`
+};
+const tl=document.getElementById('tabs'),pn=document.getElementById('panels');
+tabs.forEach((t,i)=>{
+ const b=E(`<button role="tab" id="t-${t.id}" aria-controls="p-${t.id}" style="--c:${css(t.c)}">${t.label}</button>`);tl.appendChild(b);
+ const p=E(`<div class="panel" role="tabpanel" id="p-${t.id}" aria-labelledby="t-${t.id}" tabindex="0"></div>`);p.innerHTML=panels[t.id]();pn.appendChild(p);
+});
+function show(id){
+ tabs.forEach(t=>{const on=t.id===id;document.getElementById('t-'+t.id).setAttribute('aria-selected',on);document.getElementById('t-'+t.id).tabIndex=on?0:-1;document.getElementById('p-'+t.id).hidden=!on});
+ try{history.replaceState(null,'','#'+id)}catch(e){}
+}
+tl.addEventListener('click',e=>{const b=e.target.closest('[role=tab]');if(b)show(b.id.slice(2))});
+tl.addEventListener('keydown',e=>{const i=tabs.findIndex(t=>document.getElementById('t-'+t.id)===document.activeElement);
+ if(i<0||!['ArrowRight','ArrowLeft'].includes(e.key))return;
+ const n=tabs[(i+(e.key==='ArrowRight'?1:tabs.length-1))%tabs.length].id;show(n);document.getElementById('t-'+n).focus()});
+// impact cards
+document.getElementById('p-impact').addEventListener('click',e=>{const c=e.target.closest('.card');if(!c)return;
+ const open=c.getAttribute('aria-expanded')==='true';c.setAttribute('aria-expanded',!open);c.querySelector('.more').hidden=open});
+// experience
+function role(i){const j=jobs[i];const rd=document.getElementById('rd');rd.style.setProperty('--c',css(j.c));
+ rd.innerHTML=`<h3>${j.t}</h3><div class="meta">${j.co} · ${j.d}</div><ul>${j.b.map(x=>`<li>${x}</li>`).join('')}</ul>`;
+ document.querySelectorAll('.rb').forEach(b=>b.setAttribute('aria-selected',b.dataset.j==i))}
+document.querySelector('.rl').addEventListener('click',e=>{const b=e.target.closest('.rb');if(b)role(b.dataset.j)});
+role(0);
+// skills
+function pills(k){document.getElementById('pills').innerHTML=skills.map((s,i)=>(k==='all'||k==i)?s[2].map(x=>`<span class="pill" style="--c:${css(s[1])}">${x}</span>`).join(''):'').join('');
+ document.querySelectorAll('.chip').forEach(c=>c.setAttribute('aria-pressed',c.dataset.k==k))}
+document.getElementById('chips').addEventListener('click',e=>{const c=e.target.closest('.chip');if(c)pills(c.dataset.k)});
+pills('all');
+show(tabs.some(t=>'#'+t.id===location.hash)?location.hash.slice(1):'about');
+</script>
+</body>
+</html>
